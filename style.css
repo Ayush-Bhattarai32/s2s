@@ -19,9 +19,6 @@ header {
     align-items: center;
     justify-content: space-evenly;
 
-
-
-
 }
 
 .nav-logo {
@@ -48,6 +45,7 @@ header {
     color: #FFD700;
     font-size: 1rem;
     margin-left: 5px;
+    font-weight: bold;
 
 }
 
@@ -60,6 +58,7 @@ header {
     font-size: 1rem;
     color: #FFD700;
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .phn-icon {
@@ -68,6 +67,7 @@ header {
 
 .name {
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .navbar-sec {
@@ -83,6 +83,8 @@ header {
 .active {
     color: #ffffff;
     text-decoration: none;
+
+    font-size: larger;
 }
 
 .active:hover {
@@ -121,11 +123,6 @@ header {
     color: #ffd900;
 }
 
-.services {
-    height: 200px;
-    width: 100%;
-    background-color: #84bcd9;
-}
 
 .computer-class {
     height: 80px;
@@ -340,11 +337,169 @@ li {
 
 .service-card {
     background-color: #002f5d;
-    color: #ffb300;
+    color: #ffb088;
     font-weight: bold;
-    font-size: 20px;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.service-card p {
+    font-size: 30px;
+}
+
+.services-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  
+}
+
+.flip-card1 {
+    background-color: transparent;
+    width: 262px;
+    height: 250px;
+    perspective: 1000px;
+    margin-left: 3px;
+}
+
+.flip-card2 {
+    background-color: transparent;
+    width: 262px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card3 {
+    background-color: transparent;
+    width: 262px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card4 {
+    background-color: transparent;
+    width: 262px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card5 {
+    background-color: transparent;
+    width: 262px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card6 {
+    background-color: transparent;
+    width: 262px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card7 {
+    background-color: transparent;
+    width: 262px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card1:hover .flip-card-inner {
+    transform: rotateX(-180deg);
+}
+
+.flip-card2:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-card3:hover .flip-card-inner {
+    transform: rotateX(-180deg);
+}
+
+.flip-card4:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-card5:hover .flip-card-inner {
+    transform: rotateX(-180deg);
+}
+
+.flip-card6:hover .flip-card-inner {
+    transform: rotateX(180deg);
+}
+
+.flip-card7:hover .flip-card-inner {
+    transform: rotateX(-180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #84bcd9, #b5dff0);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.flip-card-front img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.flip-card-front h4 {
+    margin-top: 15px;
+    text-align: center;
+    color: #003366;
+    font-size: 20px;
+}
+
+.flip-card-back {
+    transform: rotateX(180deg);
+    background: linear-gradient(to bottom, #ffb088, #f29c92);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.flip-card-back p {
+    font-size: 20px;
+}
+
+.plus-service{
+    height: 30px;
+    width: 100%;
+background: linear-gradient(to right, #84bcd9, #b5dff0);
+color: #003355;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.plus-service pre{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  
 }
