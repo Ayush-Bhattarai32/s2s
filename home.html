@@ -2,191 +2,727 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet">
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S2S Consultancy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-   <header>
-
-      <div class="navbar">
-         <div class="nav-logo border">
-            <div class="logo"></div>
-         </div>
-         <div class="name border">
-            <p class="name">S2S Consultancy & Technical Education Center Pvt.Ltd</p>
-         </div>
-         <div class="nav-address border">
-            <div class="add-icon">
-               <i class="fa-solid fa-location-dot" style="color: 	#FFE5B4;"></i>
-               <p class="add">Tansen-7, Pravash Palpa</p>
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
             </div>
-         </div>
-         <div class="phn border">
-            <div class="phn-icon">
-               <i class="fa-solid fa-phone" style="color: 	#FFE5B4;"></i>
-               <p class="phn">9847566866</p>
+            <p class="brand-name">
+                S2S Consultancy & Technical Education Center Pvt.Ltd</p>
+            <div class="nav-info">
+                <div class="item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Tansen-7, Pravash Palpa</span>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>9847566866</span>
+                </div>
             </div>
-         </div>
-      </div>
-
-      <div class="navbar-sec">
-
-         <a class="active" href="home.html">Home</a>
-         <a class="active" href="Contact.html">Contact</a>
-         <a class="active" href="About.html">About</a>
-         <a class="active" href="Course.html">Course</a>
-
-      </div>
-      <div class="time">Opening Hour: Sunday to Friday (7am to 6pm)
-         <div class="mail"><i class="fa-solid fa-envelope" style="color: black;"></i><a class="mail-link"
-               href="mailto:s2s.consultant.education@gmail.com">s2s.consultant.education@gmail.com</a></div>
-      </div>
-
-   </header>
-   <div class="heading">
-      <div class="container">
-
-
-         <div class="boxx2">
-
-
-
-            <div class="srj-img"> <img class="founder-img" src="saroj.jpg"></img> </div>
-            <div class="profile">
-               <p class="name-two">Saroj Neupane</p>
-               <p class="post">Managing Director</p>
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div class="wish">
-               <div class="texts">
-                  <pre>
+        </div>
 
-         On the auspicious occasion of
-         the New Year 2082, we extend 
-   our warmest wishes to all our students, 
-      parents, customers, and well-wishers, 
-   wishing them happiness, peace, prosperity,
-        long life, and continued progress.
-</pre>
-               </div>
-            </div>
-         </div>
-         <div class="imgslider"></div>
-      </div>
+        <div class="navbar-sec" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#register">Register</a>
+            <a href="#Contact">Contact</a>
+        </div>
 
-   </div>
-   <div class="service-card">
-      <p>Our Services</p>
+        <div class="time">
+            <span>Opening Hour: Sunday to Friday (7am to 6pm)</span>
+            <div class="mail">
+                <i class="fa-solid fa-envelope"></i>
+                <a class="mail-link"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=s2s.consultant.education@gmail.com"
+                    target="_blank">
+                    s2s.consultant.education@gmail.com
+                </a>
+            </div>
+        </div>
+    </header>
 
-   </div>
-   <div class="services-container">
+    <!-- HERO SECTION -->
+    <section id="home" class="heading">
+        <div class="container hero-grid">
 
-      <div class="flip-card1">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="computerclss .jpg" alt="Computer Classes">
-               <h4>Computer Classes</h4>
+            <!-- Managing Director -->
+            <div class="profile-card">
+                <img class="profile-img md-img" src="MD.jpg" alt="Managing Director" />
+                <p class="name-two">Saroj Neupane</p>
+                <p class="post">Managing Director</p>
             </div>
-            <div class="flip-card-back">
-               <p>Learn basic to advanced computer skills with expert instructors.</p>
-            </div>
-         </div>
-      </div>
 
-      <div class="flip-card2">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
-                  alt="Korean Language">
-               <h4>Korean Language Classes</h4>
+            <!-- Chairman -->
+            <div class="profile-card">
+                <img class="profile-img chairman-img" src="chairman.jpg" alt="Chairman" />
+                <p class="name-two">Suresh Neupane</p>
+                <p class="post">Chairman</p>
             </div>
-            <div class="flip-card-back">
-               <p>Speak, read, and write Korean fluently with our language program with expert instructor</p>
-            </div>
-         </div>
-      </div>
 
-      <div class="flip-card3">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="audit.jpg" alt="Preparing financial reports for any business & organization">
-               <h4>Preparing financial reports for any business & organization</h4>
+            <!-- IT Head -->
+            <div class="profile-card">
+                <img class="profile-img iy-img" src="ayush.jpg" alt="IT Head" />
+                <p class="name-two">Ayush Bhattarai</p>
+                <p class="post">IT Head</p>
             </div>
-            <div class="flip-card-back">
-               <p>We prepare professional financial statements and audit reports for businesses and organizations.
-               </p>
-            </div>
-         </div>
-      </div>
+        </div>
+    </section>
 
-      <div class="flip-card4">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="1.png" alt="Company Registration and Renewal">
-               <h4>Company Registration and Renewal</h4>
-            </div>
-            <div class="flip-card-back">
-               <p>Get full support for new company registration and renewal services.</p>
-            </div>
-         </div>
-      </div>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                We are a dedicated consultancy and technical education center, offering
+                high-quality computer training, language courses, accounting, and
+                business support services. Our mission is to empower students and
+                businesses through education and professional services.
+            </p>
+        </div>
+    </section>
 
-      <div class="flip-card5">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="account.png" alt="Accounting Training">
-               <h4>Accounting Training</h4>
+    <!-- SERVICES SECTION -->
+    <section id="services">
+        <div class="service-card">
+            <p>Our Services</p>
+        </div>
+        <div class="services-container" id="servicesContainer">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="computerclss .jpg" alt="Computer Classes" />
+                        <h4>Computer Classes</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Learn basic to advanced computer skills with expert instructors.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="flip-card-back">
-               <p>Master accounting principles and software with hands-on practical training.</p>
-            </div>
-         </div>
-      </div>
 
-      <div class="flip-card6">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="d011.png" alt="Business tax payment certificate (D01 & D02)">
-               <h4>Business tax payment certificate (D01 & D02)</h4>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+                            alt="Korean Language" />
+                        <h4>Korean Language Classes</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Speak, read, and write Korean fluently with our language program.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="flip-card-back">
-               <p>We assist in obtaining tax clearance certificates for businesses and organizations quickly.</p>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="audit.jpg" alt="Financial Reports" />
+                        <h4>Financial Reports & Audits</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Professional financial statements and audit reports for
+                            businesses.
+                        </p>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
 
-      <div class="flip-card7">
-         <div class="flip-card-inner">
-            <div class="flip-card-front">
-               <img src="tax.jpg" alt="Online tax payment system for businesses & organization">
-               <h4>Online tax payment system for businesses & organization</h4>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="1.png" alt="Company Registration" />
+                        <h4>Company Registration & Renewal</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Full support for company registration and renewal services.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="flip-card-back">
-               <p>Get guidance and setup for online tax filing and digital payment systems for your business.</p>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="account.png" alt="Accounting Training" />
+                        <h4>Accounting Training</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Master accounting principles and software with hands-on training.
+                        </p>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="plus-service">
-         <pre>Also, Monthly & Quarterly accounting of  VAT businesses,  E-PAN,  E-TDS & various online related work are are done.</pre>
-      </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="d011.png" alt="Business Tax" />
+                        <h4>Business Tax Certificate (D01 & D02)</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>We assist in obtaining tax clearance certificates quickly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="tax.jpg" alt="Online Tax" />
+                        <h4>Online Tax Payment System</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Guidance and setup for online tax filing and payment systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="career.jpg" alt="Online Tax" />
+                        <h4>Life Counselling/ Career Counselling</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Get guidance to overcome challenges and choose the right career path.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="business.jpg" alt="Online Tax" />
+                        <h4>Business Plan & Training / Counselling</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Learn how to create strong business plans and develop essential skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="maintenence.jpg" alt="Online Tax" />
+                        <h4>All kind of Maintenance Work</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Reliable solutions for home, office, and industrial maintenance needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="HVAC.jpg" alt="Online Tax" />
+                        <h4>HVAC Training</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Master heating, ventilation, and air conditioning systems with hands-on training.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="ac.jpg" alt="Online Tax" />
+                        <h4>Refrgerator & AC Repairing</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Learn to diagnose and repair refrigerators and air conditioners effectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 
 
-   </div>
-   <script src="script.js"></script>
+        </div>
+        <div class="service-container last-row">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="home appliance.jpg" alt="Online Tax" />
+                        <h4>Home Appliance's Repair Training</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Gain practical skills to repair and maintain common household appliances.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="montessori1.jpg" alt="Online Tax" />
+                        <h4>Montessori Teacher Training</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Learn modern Montessori methods to teach and nurture young learners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="industrial1.jpg" alt="Online Tax" />
+                        <h4>Industrial Electrician</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Train to install, maintain, and repair electrical systems in industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="building.jpg" alt="Online Tax" />
+                        <h4>Building Electrician</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Get skilled in wiring, installation, and safety for residential and commercial buildings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="home automation.jpg" alt="Online Tax" />
+                        <h4>Industrial & Home Automation Training</h4>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>
+                            Explore smart automation technologies for homes and industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="plus-service">
+            <p>
+                Also: Monthly & Quarterly accounting of VAT businesses, E-PAN, E-TDS &
+                various online related work.
+            </p>
+        </div>
+        <div style="text-align:center; margin: 20px 0;">
+            <button id="toggleBtn">See More</button>
+        </div>
+    </section>
+
+    </section>
+
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <div class="slide"><img src="office.jpg" alt="Class 1" /></div>
+                <div class="slide"><img src="2.jpg" alt="Class 2" /></div>
+                <div class="slide"><img src="4.jpg" alt="Class 3" /></div>
+                <div class="slide"><img src="3.jpg" alt="Class 4" /></div>
+                <div class="slide"><img src="class.jpg" alt="Class 5" /></div>
+            </div>
+            <!-- Buttons -->
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- REGISTRATION FORM -->
+    <div id="register" class="form-container">
+        <h2>Student Enrollment Registration Form</h2>
+        <p>All (*) fields are mandatory.</p>
+        <form id="contactform">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" placeholder="Full Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="address">Address *</label>
+                    <input type="text" id="address" placeholder="Address" required />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="text" id="phone" pattern="[0-9]{10}" title="Enter phone number"
+                        placeholder="9847XXXXXX" required />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" required />
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select id="gender" required>
+                        <option value="">Select a gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guardian">Guardian Name *</label>
+                    <input type="text" id="guardian" placeholder="Guardian Name" required />
+                </div>
+                <div class="form-group">
+                    <label for="guardianphone">Guardian Number *</label>
+                    <input type="text" id="guardianphone" pattern="[0-9]{10}" title="Guardian Number"
+                        placeholder="9847XXXXXX" required />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="education">Level of Education *</label>
+                    <select id="education" required>
+                        <option value="">Select a level of education</option>
+                        <option value="highschool">SEE</option>
+                        <option value="undergraduate">SLC/+2</option>
+                        <option value="postgraduate">Bachelors</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="school">Name of School/College *</label>
+                    <input type="text" id="school" placeholder="Name of School/College" required />
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="course">Course *</label>
+                    <select id="course" required>
+                        <option value="">Select a course</option>
+                        <option value="Basic Computer Course">Basic Computer Course</option>
+                        <option value="Korean Language Class">
+                            Korean Language Class
+                        </option>
+                        <option value="Japnese Language Class">
+                            Japnese Language Class
+                        </option>
+                        <option value="Accounting Training">
+                            Accounting Trainingts
+                        </option>
+                        <option value="Life Counselling/ Career Counselling">
+                            Life Counselling/ Career Counselling
+                        </option>
+                        <option value="Business plan and training/counselling">
+                            Business plan and training/counselling
+                        </option>
+                        <option value="All kind of maintenance work">
+                            All kind of maintenance work
+                        </option>
+                        <option value="HVAC Training">
+                            HVAC Training
+                        </option>
+                        <option value="Refrgerator & AC Repairing">
+                            Refrgerator & AC Repairing
+                        </option>
+                        <option value="Home appliance's Repair Training">
+                            Home appliance's Repair Training
+                        </option>
+                        <option value="Montessori Teacher Training">
+                            Montessori Teacher Training
+                        </option>
+                        <option value="Industrial Electrician">
+                            Industrial Electrician
+                        </option>
+                        <option value="Building Electrician">
+                            Building Electrician
+                        </option>
+                        <option value="Industrial & Home Automation Training">
+                            Industrial & Home Automation Training
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="joindate">Join Date *</label>
+                    <input type="date" id="joindate" required />
+                </div>
+            </div>
+
+            <!-- Terms -->
+            <div class="form-row">
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" required />
+                    <label for="terms">I agree to the Terms and Conditions *</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="Contact" class="footer">
+        <div class="footer-container">
+
+
+            <!-- Contact Info -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> 9847566866</p>
+                <p><i class="fas fa-envelope"></i> s2s.consultant.education@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Tansen-7, Pravash Palpa</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch Form -->
+            <div class="footer-col">
+                <h3>Get In Touch</h3>
+                <form id="getintouchform">
+                    <input type="text" id="fullname2" placeholder="Full Name" required />
+                    <input type="text" id="phone2" placeholder="Phone Number" required />
+                    <textarea id="queries" placeholder="Queries" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Institution Map -->
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1760585297497!6m8!1m7!1sOo1gFTWAuZS6p9aUxeeqWw!2m2!1d27.84389003441773!2d83.54100621918732!3f326.38321933339023!4f4.2904929804715835!5f2.578966883789">
+
+                </iframe>
+            </div>
+        </div>
+        </div>
+        <!-- social links -->
+        <div class="footer-social">
+            <a href="https://facebook.com/s2selectricals" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/9847566866" target="_blank"> <i class="fab fa-whatsapp"></i> </a>
+            <a href="https://wa.me/9857060056" target="_blank"><i class="fab fa-whatsapp"></i> </a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>
+                © 2025 S2S Consultancy & Technical Education Center Pvt. Ltd. All Rights Reserved
+            </p>
+            <div class="footer-links">
+                <a>Terms of Service</a>
+                <a>Privacy Policy</a>
+                <a>License Agreement</a>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Slider
+        const wrapper = document.querySelector('.slider-wrapper');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let index = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(i) {
+            if (i >= totalSlides) index = 0;
+            if (i < 0) index = totalSlides - 1;
+            wrapper.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            index++;
+            showSlide(index);
+        }
+
+        function prevSlide() {
+            index--;
+            showSlide(index);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        setInterval(nextSlide, 2000);
+
+        /*toogle button*/
+        const cards = document.querySelectorAll('.flip-card');
+        const btn = document.getElementById('toggleBtn');
+        let expanded = false; // track state
+
+        function showFirstFive() {
+            cards.forEach((card, index) => {
+                card.style.display = index < 5 ? 'block' : 'none';
+            });
+        }
+
+        function showAll() {
+            cards.forEach(card => card.style.display = 'block');
+        }
+
+        // initialize with 5 cards only
+        showFirstFive();
+
+        btn.addEventListener('click', () => {
+            if (expanded) {
+                showFirstFive();
+                btn.textContent = 'See More';
+            } else {
+                showAll();
+                btn.textContent = 'See Less';
+            }
+            expanded = !expanded;
+        });
+
+document.getElementById("contactform").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const data = {
+        formType: "registration",
+        fullname: document.getElementById("fullname").value,
+        address: document.getElementById("address").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        dob: document.getElementById("dob").value,
+        gender: document.getElementById("gender").value,
+        guardian: document.getElementById("guardian").value,
+        guardianphone: document.getElementById("guardianphone").value,
+        education: document.getElementById("education").value,
+        school: document.getElementById("school").value,
+        course: document.getElementById("course").value,
+        joindate: document.getElementById("joindate").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbzcS3GMARYMcTGQFFem7XL2mZkhLz0dDIcQxC3VkCc4vttGMBfdrTRKGMAOQou5VpTPjw/exec", {
+        method: "POST",
+        body: JSON.stringify(data)
+    })
+        .then(() => alert("Registration Submitted Successfully!"))
+        .catch(() => alert("Error submitting form!"));
+});
+
+document.getElementById("getintouchform").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const data = {
+        formType: "contact",
+        fullname2: document.getElementById("fullname2").value,
+        phone2: document.getElementById("phone2").value,
+        queries: document.getElementById("queries").value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbzcS3GMARYMcTGQFFem7XL2mZkhLz0dDIcQxC3VkCc4vttGMBfdrTRKGMAOQou5VpTPjw/exec", {
+        method: "POST",
+        body: JSON.stringify(data)
+    })
+        .then(() => alert("Message Sent Successfully!"))
+        .catch(() => alert("Error sending message!"));
+});
+
+
+
+    </script>
+
 </body>
 
 </html>
