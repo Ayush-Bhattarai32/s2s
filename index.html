@@ -676,12 +676,14 @@ document.getElementById("contactform").addEventListener("submit", function (e) {
 
     fetch("https://script.google.com/macros/s/AKfycbzcS3GMARYMcTGQFFem7XL2mZkhLz0dDIcQxC3VkCc4vttGMBfdrTRKGMAOQou5VpTPjw/exec", {
         method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify(data)
     })
-        .then(() => alert("Registration Submitted Successfully!"))
-        .catch(() => alert("Error submitting form!"));
+    .then(() => alert("Registration Submitted Successfully!"))
+    .catch(() => alert("Error submitting form!"));
 });
-
 document.getElementById("getintouchform").addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -694,13 +696,14 @@ document.getElementById("getintouchform").addEventListener("submit", function (e
 
     fetch("https://script.google.com/macros/s/AKfycbzcS3GMARYMcTGQFFem7XL2mZkhLz0dDIcQxC3VkCc4vttGMBfdrTRKGMAOQou5VpTPjw/exec", {
         method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify(data)
     })
-        .then(() => alert("Message Sent Successfully!"))
-        .catch(() => alert("Error sending message!"));
+    .then(() => alert("Message Sent Successfully!"))
+    .catch(() => alert("Error sending message!"));
 });
-
-
 
     </script>
 
