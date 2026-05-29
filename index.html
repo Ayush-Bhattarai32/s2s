@@ -655,55 +655,6 @@
             expanded = !expanded;
         });
 
-document.getElementById("contactform").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const data = {
-        formType: "registration",
-        fullname: document.getElementById("fullname").value,
-        address: document.getElementById("address").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        dob: document.getElementById("dob").value,
-        gender: document.getElementById("gender").value,
-        guardian: document.getElementById("guardian").value,
-        guardianphone: document.getElementById("guardianphone").value,
-        education: document.getElementById("education").value,
-        school: document.getElementById("school").value,
-        course: document.getElementById("course").value,
-        joindate: document.getElementById("joindate").value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycbzcS3GMARYMcTGQFFem7XL2mZkhLz0dDIcQxC3VkCc4vttGMBfdrTRKGMAOQou5VpTPjw/exec", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    })
-    .then(() => alert("Registration Submitted Successfully!"))
-    .catch(() => alert("Error submitting form!"));
-});
-document.getElementById("getintouchform").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const data = {
-        formType: "contact",
-        fullname2: document.getElementById("fullname2").value,
-        phone2: document.getElementById("phone2").value,
-        queries: document.getElementById("queries").value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycbzcS3GMARYMcTGQFFem7XL2mZkhLz0dDIcQxC3VkCc4vttGMBfdrTRKGMAOQou5VpTPjw/exec", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    })
-    .then(() => alert("Message Sent Successfully!"))
-    .catch(() => alert("Error sending message!"));
-});
 
     </script>
 
