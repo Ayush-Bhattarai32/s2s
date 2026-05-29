@@ -392,47 +392,47 @@
         </div>
     </section>
 
-    <!-- REGISTRATION FORM -->
+<!-- REGISTRATION FORM -->
 <div id="register" class="form-container">
     <h2>Student Enrollment Registration Form</h2>
     <p>All (*) fields are mandatory.</p>
 
-    <form action="https://getform.io/f/lska6rxs1bq" method="POST" id="contactform">
+    <form action="https://forminit.com/f/lska6rxs1bq" method="POST">
 
         <div class="form-row">
             <div class="form-group">
-                <label for="fullname">Full Name *</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required />
+                <label>Full Name *</label>
+                <input type="text" name="fi-sender-fullName" placeholder="Full Name" required />
             </div>
 
             <div class="form-group">
-                <label for="address">Address *</label>
-                <input type="text" id="address" name="address" placeholder="Address" required />
+                <label>Address *</label>
+                <input type="text" name="fi-text-address" placeholder="Address" required />
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" placeholder="Email" required />
+                <label>Email *</label>
+                <input type="email" name="fi-sender-email" placeholder="Email" required />
             </div>
 
             <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="text" id="phone" name="phone" pattern="[0-9]{10}" placeholder="9847XXXXXX" required />
+                <label>Phone *</label>
+                <input type="text" name="fi-text-phone" pattern="[0-9]{10}" placeholder="9847XXXXXX" required />
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group">
-                <label for="dob">Date of Birth *</label>
-                <input type="date" id="dob" name="dob" required />
+                <label>Date of Birth *</label>
+                <input type="date" name="fi-text-dob" required />
             </div>
 
             <div class="form-group">
-                <label for="gender">Gender *</label>
-                <select id="gender" name="gender" required>
-                    <option value="">Select a gender</option>
+                <label>Gender *</label>
+                <select name="fi-text-gender" required>
+                    <option value="">Select gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
@@ -442,21 +442,21 @@
 
         <div class="form-row">
             <div class="form-group">
-                <label for="guardian">Guardian Name *</label>
-                <input type="text" id="guardian" name="guardian" placeholder="Guardian Name" required />
+                <label>Guardian Name *</label>
+                <input type="text" name="fi-text-guardian" placeholder="Guardian Name" required />
             </div>
 
             <div class="form-group">
-                <label for="guardianphone">Guardian Number *</label>
-                <input type="text" id="guardianphone" name="guardianphone" pattern="[0-9]{10}" placeholder="9847XXXXXX" required />
+                <label>Guardian Phone *</label>
+                <input type="text" name="fi-text-guardianPhone" pattern="[0-9]{10}" placeholder="9847XXXXXX" required />
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group">
-                <label for="education">Level of Education *</label>
-                <select id="education" name="education" required>
-                    <option value="">Select a level of education</option>
+                <label>Education *</label>
+                <select name="fi-text-education" required>
+                    <option value="">Select level</option>
                     <option value="SEE">SEE</option>
                     <option value="+2">SLC/+2</option>
                     <option value="Bachelors">Bachelors</option>
@@ -464,44 +464,43 @@
             </div>
 
             <div class="form-group">
-                <label for="school">Name of School/College *</label>
-                <input type="text" id="school" name="school" placeholder="Name of School/College" required />
+                <label>School/College *</label>
+                <input type="text" name="fi-text-school" placeholder="School/College" required />
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group">
-                <label for="course">Course *</label>
-                <select id="course" name="course" required>
-                    <option value="">Select a course</option>
-                    <option value="Basic Computer Course">Basic Computer Course</option>
-                    <option value="Korean Language Class">Korean Language Class</option>
-                    <option value="Japanese Language Class">Japanese Language Class</option>
-                    <option value="Accounting Training">Accounting Training</option>
-                    <option value="Life/Career Counselling">Life/Career Counselling</option>
-                    <option value="Business Training">Business Plan & Training</option>
-                    <option value="Maintenance Work">Maintenance Work</option>
-                    <option value="HVAC Training">HVAC Training</option>
-                    <option value="AC Repairing">Refrigerator & AC Repairing</option>
-                    <option value="Home Appliance Repair">Home Appliance Repair Training</option>
-                    <option value="Montessori Training">Montessori Teacher Training</option>
+                <label>Course *</label>
+                <select name="fi-text-course" required>
+                    <option value="">Select course</option>
+                    <option value="Computer">Basic Computer</option>
+                    <option value="Korean">Korean Language</option>
+                    <option value="Japanese">Japanese Language</option>
+                    <option value="Accounting">Accounting Training</option>
+                    <option value="Career">Career Counseling</option>
+                    <option value="Business">Business Training</option>
+                    <option value="Maintenance">Maintenance Work</option>
+                    <option value="HVAC">HVAC Training</option>
+                    <option value="AC Repair">AC Repair</option>
+                    <option value="Home Appliance">Home Appliance Repair</option>
+                    <option value="Montessori">Montessori Training</option>
                     <option value="Industrial Electrician">Industrial Electrician</option>
                     <option value="Building Electrician">Building Electrician</option>
-                    <option value="Automation Training">Industrial & Home Automation</option>
+                    <option value="Automation">Automation Training</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="joindate">Join Date *</label>
-                <input type="date" id="joindate" name="joindate" required />
+                <label>Join Date *</label>
+                <input type="date" name="fi-text-joinDate" required />
             </div>
         </div>
 
-        <!-- Terms -->
         <div class="form-row">
             <div class="form-group terms">
-                <input type="checkbox" id="terms" name="terms" required />
-                <label for="terms">I agree to the Terms and Conditions *</label>
+                <input type="checkbox" name="fi-terms" required />
+                <label>I agree to Terms and Conditions *</label>
             </div>
         </div>
 
@@ -511,7 +510,6 @@
 
     </form>
 </div>
-
     <!-- FOOTER -->
     <footer id="Contact" class="footer">
         <div class="footer-container">
