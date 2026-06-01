@@ -1,0 +1,219 @@
+/* ================== Global Styles ================== */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 35px;
+    width: 100%;
+    background: #004976;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    gap: 10px;
+    border-bottom: 1px solid #000000;
+}
+#phone-icon {
+    padding-left: 15px;
+    font-size: 12px;
+}
+#envelope-icon {
+    padding-left: 15px;
+    font-size: 12px;
+}
+.mail-link {
+    color: #fff;
+    text-decoration: none;
+}
+#location-icon {
+    padding-left: 25px;
+    font-size: 12px;
+}
+#number {
+    color: #fff;
+    text-decoration: none;
+    opacity: 2;
+}
+
+#phone-icon:hover,
+#envelope-icon:hover,
+.mail-link:hover,
+#number:hover{
+    opacity:0.8;
+}
+ 
+.footer-social {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-left: 655px;
+    font-size: 15px;
+}
+
+.footer-social a {
+    color: #fff;
+}
+.footer-social a{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    background: #00274D;
+    color: #fff;
+    display: flex;
+    align-items: center;   
+   
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+        font-size: 1.6rem;
+    font-weight: 700;
+    flex: 1;
+    text-align: center;
+    color: #ffb088;
+}
+
+
+.logo img {
+    height: 70px;
+    width:70px;
+   
+}
+#nav-links{
+    display: flex;
+    gap: 20px;
+    padding-right: 15px;
+}
+#nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+#nav-links a:hover {
+    color: #ffb088;
+    text-shadow: 0 0 10px rgba(255, 176, 136, 0.8);
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+    padding: 50px;
+    background: #00274D;
+    color: white;
+    margin-top: 290px;
+    border-bottom: #000000 solid 1px   ;
+    height: 360px;
+}
+
+.footer-col h3 {
+    margin-bottom: 30px;
+   color:#ff8a65;
+    
+    position: relative;
+}
+
+.footer-col h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;  /* Controls gap */
+    width: 70px;
+    height: 2.5px;
+    background: #ff8a65;
+}
+    
+
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    color: #00D4FF;
+}
+
+.footer-col p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    margin-bottom: 20px;
+}
+.footer-col iframe {
+     width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.footer-bottom{
+ padding: 15px 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0;
+    background: #00274D;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.footer-bottom-1{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    margin: 0;
+    background: #00274D;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
