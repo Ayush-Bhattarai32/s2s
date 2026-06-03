@@ -73,7 +73,8 @@ header {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-    padding-left: 655px;
+     margin-left:auto;
+    padding-left:0;
     font-size: 15px;
 }
 
