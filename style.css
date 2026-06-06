@@ -606,44 +606,122 @@ select {
     font-size: 14px;
 }
 
-/* Small devices (landscape phones, 576px - 767px) */
-@media (max-width: 767px) {
-    .navbar {
-        padding: 10px 15px;
-        position: relative;
+/* ==========================
+   Large TVs (1920px and up)
+   ========================== */
+@media (min-width: 1920px) {
+    .hero-grid {
+        max-width: 1800px;
+        margin: auto;
     }
+
+    .services-container {
+        max-width: 1800px;
+        margin: auto;
+    }
+
+    .footer {
+        padding: 60px 120px;
+    }
+}
+
+/* ==========================
+   Desktop PCs (1400px - 1919px)
+   ========================== */
+@media (max-width: 1919px) {
+    .hero-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ==========================
+   Large Laptops (1200px - 1399px)
+   ========================== */
+@media (max-width: 1399px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .profile-img {
+        height: 300px;
+    }
+
+    .footer {
+        gap: 25px;
+    }
+}
+
+/* ==========================
+   Small Laptops (992px - 1199px)
+   ========================== */
+@media (max-width: 1199px) {
 
     .logo {
-        width: 70px;
-        height: 70px;
+        font-size: 1.1rem;
     }
 
-    .brand-name {
+    #nav-links {
+        gap: 12px;
+    }
+
+    .hero-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .profile-card {
+        padding: 10px;
+    }
+
+    .profile-img {
+        height: 240px;
+    }
+
+    .name-two {
         font-size: 1rem;
-        text-align: left;
-        margin: 0 10px;
     }
 
-    .nav-info {
+    .post {
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+}
+
+/* ==========================
+   Tablets (768px - 991px)
+   ========================== */
+@media (max-width: 991px) {
+
+    .navbar {
         display: none;
     }
 
-    /* Show hamburger menu */
+    .heading {
+        margin-top: 80px;
+    }
+
     .hamburger {
         display: flex;
+        margin-right: 20px;
     }
 
-    /* Transform navbar-sec for mobile */
     .navbar-sec {
         display: none;
-        flex-direction: column;
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #0077B6;
-        padding: 0;
-        z-index: 1000;
+        top: 80px;
+        right: 0;
+        width: 250px;
+        background: #00274D;
+        flex-direction: column;
     }
 
     .navbar-sec.active {
@@ -651,115 +729,123 @@ select {
     }
 
     .navbar-sec a {
-        padding: 15px 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        width: 100%;
-        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
-    .time {
+    .logo {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .hero-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slider-container {
+        width: 95%;
+    }
+
+    .slide img {
+        height: 400px;
+    }
+
+    .form-row {
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
     }
 
-    .heading {
-        margin-top: 250px;
+    .footer {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}
+
+/* ==========================
+   Large Phones (576px - 767px)
+   ========================== */
+@media (max-width: 767px) {
+
+    .logo {
+        font-size: 0.9rem;
     }
 
-    .name-two {
-        font-size: 1.3rem;
+    .logo img {
+        width: 50px;
+        height: 50px;
     }
 
-    .service-card {
-        font-size: 1.5rem;
-        padding: 1rem;
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-img {
+        height: 320px;
     }
 
     .services-container {
         grid-template-columns: 1fr;
     }
 
-    .services-container .flip-card:last-child {
-        grid-column: 1;
-    }
-
-    .flip-card {
-        max-width: 100%;
-    }
-
-    .gallery-section h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .slide {
-        flex: 0 0 280px;
-        margin-right: 20px;
+    .gallery-section {
+        padding: 4rem 3%;
     }
 
     .slide img {
+        height: 280px;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-col iframe {
         height: 250px;
-    }
-
-    .form-row {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .footer-bottom .footer-links {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .footer-bottom .footer-links a {
-        margin: 0;
     }
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
+/* ==========================
+   Small Phones (<576px)
+   ========================== */
 @media (max-width: 575px) {
-    .navbar {
-        padding: 8px 10px;
-    }
-
-    .brand-name {
-        font-size: 0.9rem;
-    }
 
     .heading {
-        margin-top: 220px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    .boxx2 {
-        padding: 15px;
-    }
-
-    .wish {
         padding: 10px;
-        font-size: 0.9rem;
     }
 
-    .imgslider {
-        min-height: 250px;
+    .logo {
+        font-size: 0.8rem;
+    }
+
+    .profile-card {
+        padding: 12px;
+    }
+
+    .profile-img {
+        height: 250px;
+    }
+
+    .name-two {
+        font-size: 1rem;
+    }
+
+    .post {
+        font-size: 0.85rem;
+    }
+
+    #about {
+        padding: 60px 8%;
     }
 
     #about h2 {
@@ -770,80 +856,20 @@ select {
         font-size: 1rem;
     }
 
-    .service-card {
-        font-size: 1.3rem;
-    }
-
-    .flip-card-front h4 {
-        font-size: 1rem;
-    }
-
-    .flip-card-back {
-        font-size: 0.85rem;
-        padding: 10px;
-    }
-
-    .gallery-section {
-        padding: 3rem 2%;
-    }
-
-    .gallery-section h2 {
-        font-size: 1.8rem;
-    }
-
-    .slide {
-        flex: 0 0 220px;
-    }
-
     .slide img {
-        height: 200px;
-    }
-
-    .form-container {
-        width: 95%;
-        padding: 15px;
+        height: 220px;
     }
 
     .form-container h2 {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 1400px) {
-    .hero-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
+        font-size: 1.4rem;
     }
 
-    .profile-card {
-        padding: 15px;
+    .footer {
+        padding: 20px 15px;
     }
 
-    .profile-img {
-        height: 320px;
-    }
-}
-
-/* Small laptops */
-@media (max-width: 1200px) {
-    .hero-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-    }
-
-    .profile-card {
-        padding: 12px;
-    }
-
-    .profile-img {
-        height: 300px;
-    }
-
-    .name-two {
-        font-size: 1.1rem;
-    }
-
-    .post {
-        font-size: 0.9rem;
+    .footer-bottom {
+        font-size: 12px;
+        text-align: center;
     }
 }
