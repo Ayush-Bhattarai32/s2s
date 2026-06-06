@@ -279,9 +279,6 @@
             </div>
 
 
-
-        </div>
-        <div class="service-container last-row">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
@@ -578,14 +575,13 @@
                 if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
                     navLinks.classList.remove('active');
                 }
-            });
-
+            }); 
+  
             // Slider
             const wrapper = document.querySelector('.slider-wrapper');
             const slides = document.querySelectorAll('.slide');
             const prevBtn = document.querySelector('.prev');
             const nextBtn = document.querySelector('.next');
-
             let index = 0;
             const totalSlides = slides.length;
 
