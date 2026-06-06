@@ -169,10 +169,10 @@ header {
     padding: 20px;
 }
 
-/* 3-profile grid */
+/* 4-profile grid */
 .hero-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -183,32 +183,18 @@ header {
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-img {
-    width: 50%;
-    height: 304px;
-    /* Base height for all */
+    width: 98%;
+    height: 379px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Chairman override */
-.chairman-img {
-    height: auto;
-    max-height: 300px;
-}
-
-/* MD override */
-.md-img {
-    height: 295px;
-}
-
-/* IT Head override */
-.it-img {
-    height: 300px;
 }
 
 .name-two {
