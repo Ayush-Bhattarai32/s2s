@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
   res.send("S2S Backend Server is running!");
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 mongoose
   .connect(process.env.MONGO_URI)
