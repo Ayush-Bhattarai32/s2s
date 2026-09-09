@@ -28,13 +28,7 @@ app.use(
 
 app.use(express.json({ limit: "10kb" }));
 
-app.use("/api/registrations", registrationRoutes);
-app.use("/api/admin", adminRoutes);
-
-app.get("/", (req, res) => {
-  res.send("S2S Backend Server is running!");
-});
-
+// MongoDB connection
 let isConnected = false;
 
 async function connectDB() {
@@ -52,6 +46,7 @@ async function connectDB() {
   }
 }
 
+// IMPORTANT: Database connection MUST come before API routes
 app.use(async (req, res, next) => {
   try {
     await connectDB();
@@ -61,6 +56,15 @@ app.use(async (req, res, next) => {
       message: "Database connection failed",
     });
   }
+});
+
+// API routes
+app.use("/api/registrations", registrationRoutes);
+app.use("/api/admin", adminRoutes);
+
+// Root route
+app.get("/", (req, res) => {
+  res.send("S2S Backend Server is running!");
 });
 
 module.exports = app;
