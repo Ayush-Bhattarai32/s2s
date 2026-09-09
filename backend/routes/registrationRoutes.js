@@ -7,7 +7,7 @@ const adminAuth = require("../middleware/adminAuth");
 const router = express.Router();
 const registrationLimiter = rateLimit({
   windowMs: 1 * 60 * 1000,
-  limit: 20,
+  limit: 1000,
   message: {
     message: "Too many registration attempts. Please try again later.",
   },
