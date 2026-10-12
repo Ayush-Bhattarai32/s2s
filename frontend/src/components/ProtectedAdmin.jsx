@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 
 function ProtectedAdmin({ children }) {
-  const [checking, setChecking] = useState(true);
+  const [checking, setChecking] = useState(() => Boolean(localStorage.getItem("adminToken")));
   const [authorized, setAuthorized] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem("adminToken");
 
     if (!token) {
-      setChecking(false);
       return;
     }
 

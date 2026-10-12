@@ -6,14 +6,9 @@ import image4 from "../assets/4.jpg";
 import image3 from "../assets/3.jpg";
 import classImage from "../assets/class.jpg";
 
+const images = [office, image2, image4, image3, classImage];
+
 function Gallery() {
-  const images = [
-    office,
-    image2,
-    image4,
-    image3,
-    classImage,
-  ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -29,7 +24,7 @@ function Gallery() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextSlide();
+      setCurrentSlide((previous) => (previous + 1) % images.length);
     }, 2000);
 
     return () => clearInterval(interval);

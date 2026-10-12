@@ -7,7 +7,7 @@ const adminAuth = require("../middleware/adminAuth");
 const router = express.Router();
 const registrationLimiter = rateLimit({
   windowMs: 1 * 60 * 1000,
-  limit: 1000,
+  limit: 20,
   message: {
     message: "Too many registration attempts. Please try again later.",
   },
@@ -19,7 +19,10 @@ const registrationLimiter = rateLimit({
 // PUBLIC ROUTE
 router.post("/", registrationLimiter, async (req, res) => {
   try {
-   const { email, course } = req.body;
+   const { course } = req.body;
+   const email = typeof req.body.email === "string"
+     ? req.body.email.trim().toLowerCase()
+     : "";
 
 const existingRegistration = await Registration.findOne({
   email,
@@ -32,7 +35,7 @@ if (existingRegistration) {
   });
 }
 
-const registration = new Registration(req.body);
+const registration = new Registration({ ...req.body, email });
 
 const savedRegistration = await registration.save();
 

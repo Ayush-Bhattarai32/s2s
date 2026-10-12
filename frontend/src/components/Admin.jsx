@@ -19,11 +19,6 @@ const [passwordLoading, setPasswordLoading] = useState(false);
 const registrationsPerPage = 5;
 
 useEffect(() => {
-  setCurrentPage(1);
-}, [searchTerm, selectedCourse]);
-
-
-useEffect(() => {
   const token = localStorage.getItem("adminToken");
 
   if (!token) {
@@ -433,7 +428,10 @@ const handleLogout = () => {
               type="text"
               placeholder="Search student, email or phone..."
               value={searchTerm}
-              onChange={(event) => setSearchTerm(event.target.value)}
+              onChange={(event) => {
+                setSearchTerm(event.target.value);
+                setCurrentPage(1);
+              }}
             />
           </div>
 
@@ -444,9 +442,10 @@ const handleLogout = () => {
 
             <select
               value={selectedCourse}
-              onChange={(event) =>
-                setSelectedCourse(event.target.value)
-              }
+              onChange={(event) => {
+                setSelectedCourse(event.target.value);
+                setCurrentPage(1);
+              }}
             >
               {courses.map((course) => (
                 <option key={course} value={course}>

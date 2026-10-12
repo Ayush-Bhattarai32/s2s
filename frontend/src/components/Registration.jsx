@@ -230,8 +230,8 @@ function Registration() {
           >
             <option value="">Select a course</option>
             <option value="Basic Computer">Basic Computer</option>
-            <option value="Korean">Korean Language</option>
-            <option value="Japanese">Japanese Language</option>
+            <option value="Korean Language">Korean Language</option>
+            <option value="Japanese Language">Japanese Language</option>
             <option value="Accounting">Accounting</option>
             <option value="Career">Career</option>
             <option value="Business">Business</option>

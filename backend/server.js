@@ -37,9 +37,15 @@ async function connectDB() {
   }
 
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+  await mongoose.connect(process.env.MONGO_URI, {
+  dbName: "s2s-databse",
+});
     isConnected = true;
     console.log("MongoDB connected successfully");
+    console.log(
+  "Admin collection:",
+  mongoose.model("Admin").collection.name
+);
   } catch (error) {
     console.error("MongoDB connection failed:", error);
     throw error;
@@ -67,4 +73,8 @@ app.get("/", (req, res) => {
   res.send("S2S Backend Server is running!");
 });
 
-module.exports = app;
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`S2S Backend Server running on port ${PORT}`);
+});
